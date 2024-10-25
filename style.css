@@ -1,0 +1,63 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+#perfil {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-area: 1 / 1 / 2 / 2;
+    height: 25rem;
+}
+#perfil h2, #contador h3{
+    margin: 0.5rem 0;
+}
+#perfil img {
+    justify-self: center;
+    height: 5rem;
+}
+#contador {
+    display: flex;
+    justify-content: space-evenly;
+}
+#contador h3 {
+    justify-self: center;
+}
+#contador img {
+    height: 3rem;
+}
+.produtos {
+    justify-content: center;
+    align-items: center;
+    grid-area: 1 / 2 / 2 / 4;
+}
+.produtos img {
+    width: 100%;
+    height: 50%;
+}
+.acoes, footer {
+    display: flex;
+    justify-content: space-between;
+}
+.todas-acoes {
+    display: flex;
+    width: 12rem;
+    align-items: center;
+}
+.todas-acoes img{
+    width: 3em;
+}
+.todas-acoes h4{
+    margin: 0 0.5rem;
+}
+footer {
+    height: 6rem;
+    align-items: center;
+}
+.social img {
+    width: 2rem;
+    margin: 1rem;
+}
