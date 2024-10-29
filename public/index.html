@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="Maria Elaine">
+    <title>Troca-Tudo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div id="perfil">
+                <div class="itens-perfil">
+                    <img src="avatars/account_circle.png" alt="Perfil de usuário não logado">
+                    <h2 id="nome-usuario">Usuário não logado</h2>
+                    <div id="contador">
+                        <div>
+                            <h3 id="curtidas-usuario">0</h3>
+                            <img src="images/curtidas.jpg" alt="Total de curtidas">
+                        </div>
+                        <div>
+                            <h3 id="descurtidas-usuario">0</h3>
+                            <img src="images/descurtidas.jpg" alt="Total de descurtidas">
+                        </div>
+                    </div>
+                    <button id="login" type="submit">Entrar</button>
+                </div>
+                <div class="modal">
+                    <dialog>
+                        <div class="text">
+                            <h2>Login</h2>
+                            <button type="submit" class="fechar">&times</button>
+                        </div>
+                        <div class="acoes-login">
+                            <span>E-mail:</span>
+                            <input type="email" id="email" placeholder="Digite seu e-mail">
+                            <span>Senha:</span>
+                            <input type="password" id="password" placeholder="Digite sua senha">
+                            <button type="submit" id="login">Entrar</button>
+                            <button type="submit" class="fechar">Cancelar</button>
+                        </div>
+                    </dialog>
+                </div>
+            </div>
+            <div class="produtos">
+                <div class="produto">
+                    <h3 class="titulo-produto">Produto 1</h3>
+                    <div class="produto-img">
+                        <img src="images/produto1.jpg" alt="Produto 1">
+                    </div>
+                    <div class="acoes">
+                        <div class="todas-acoes">
+                            <img src="icons/thumb_up.svg" alt="Curtir">
+                            <h4 id="curtida-produto">0</h4>
+                            <img src="icons/thumb_down.svg" alt="Descurtir">
+                            <h4 id="descurtida-produto">0</h4>
+                            <img src="icons/comment.svg" alt="Comentar">
+                            <h4 id="comentario-produto">0</h4>
+                        </div>
+                        <div class="ultimo-comentario">
+                            <h4 id="ultimo-comentario">Último comentário</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="produto">
+                    <h3 class="titulo-produto">Produto 2</h3>
+                    <div class="produto-img">
+                        <img src="images/produto2.jpg" alt="Produto 2">
+                    </div>
+                    <div class="acoes">
+                        <div class="todas-acoes">
+                            <img src="icons/thumb_up.svg" alt="Curtir">
+                            <h4 id="curtida-produto">0</h4>
+                            <img src="icons/thumb_down.svg" alt="Descurtir">
+                            <h4 id="descurtida-produto">0</h4>
+                            <img src="icons/comment.svg" alt="Comentar">
+                            <h4 id="comentario-produto">0</h4>
+                        </div>
+                        <div class="ultimo-comentario">
+                            <h4 id="ultimo-comentario">Último comentário</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="produto">
+                    <h3 class="titulo-produto">Produto 3</h3>
+                    <div class="produto-img">
+                        <img src="images/produto3.jpg" alt="Produto 3">
+                    </div>
+                    <div class="acoes">
+                        <div class="todas-acoes">
+                            <img src="icons/thumb_up.svg" alt="Curtir">
+                            <h4 id="curtida-produto">0</h4>
+                            <img src="icons/thumb_down.svg" alt="Descurtir">
+                            <h4 id="descurtida-produto">0</h4>
+                            <img src="icons/comment.svg" alt="Comentar">
+                            <h4 id="comentario-produto">0</h4>
+                        </div>
+                        <div class="ultimo-comentario">
+                            <h4 id="ultimo-comentario">Último comentário</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <h3 id ="nome-empresa">Troca-Tudo</h3>
+        </div>
+        <div class="social">
+            <img src="icons/facebook.svg" alt="Facebook">
+            <img src="icons/instagram.svg" alt="Instagram">
+            <img src="icons/tiktok.svg" alt="TikTok">
+            <img src="icons/x.svg" alt="X">
+            <img src="icons/youtube.svg" alt="YouTube">
+        </div>
+        <div>
+            <h3 id="copyright">2024 Troca-Tudo Corp.</h3>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

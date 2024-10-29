@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(199, 199, 199);
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+#perfil {
+    display: grid;
+    grid-area: 1 / 1 / 2 / 2;
+    margin: 0.5rem;
+    border-radius: 3px;
+    background-color: rgb(158, 158, 158);
+}
+.itens-perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+}
+.itens-perfil h2 {
+    margin: 1.5rem 0;
+}
+.itens-perfil img {
+    height: 5rem;
+}
+#contador {
+    display: flex;
+}
+#contador h3 {
+    margin: 0.5rem 0;
+    justify-self: center;
+}
+#contador img {
+    height: 3rem;
+    padding: 0.2rem;
+    border-radius: 0.5rem;
+}
+dialog::backdrop {
+    background-color: rgba(107, 107, 107, 0.596);
+}
+dialog {
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 1em rgb(0, 0, 0 / 0.3);
+    width: 50%;
+    padding: 1.5rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.acoes-login {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.5rem 0.5rem;
+}
+dialog h2 {
+    margin: 0.5rem;
+}
+.produto {
+    margin-bottom: 1rem;
+    background-color: rgb(173, 173, 173);
+    margin: 0.5rem;
+    border-radius: 3px;
+}
+.produtos {
+    justify-content: center;
+    align-items: center;
+    grid-area: 1 / 2 / 2 / 4;
+}
+.produtos h3 {
+    text-align: center;
+}
+.produtos h3, .produtos .acoes {
+    padding: 0.8rem;
+}
+.produto-img {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    height: 50%;
+    background-color: rgb(219, 219, 219);
+    border: 1px solid gray;
+    border-radius: 3px;
+    margin: 0.5rem;
+}
+.produtos img {
+    width: 50%;
+}
+.acoes, footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.todas-acoes {
+    display: flex;
+    width: 12rem;
+    align-items: center;
+}
+.todas-acoes img{
+    width: 3em;
+}
+.todas-acoes h4{
+    margin: 0 0.5rem;
+}
+footer {
+    height: 6rem;
+}
+.social img {
+    width: 2rem;
+    margin: 1rem;
+}
