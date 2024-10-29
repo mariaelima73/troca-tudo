@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="login" type="submit">Entrar</button>
+    <dialog>
+        <div class="text">
+            <h2>Login</h2>
+            <button type="submit" class="fechar">&times</button>
+        </div>
+        <div class="acoes-login">
+            <span>E-mail:</span>
+            <input type="email" id="email" placeholder="Digite seu e-mail">
+            <span>Senha:</span>
+            <input type="password" id="password" placeholder="Digite sua senha">
+            <button type="submit" id="login">Entrar</button>
+            <button type="submit" id="fechar">Cancelar</button>
+        </div>
+    </dialog>
+    <script>
+        const buttonLogin = document.querySelector("#login");
+        const modal = document.querySelector("dialog");
+        const buttonFechar = document.querySelector("#fechar");
+        const buttonFechar2 = document.querySelector(".fechar")
+
+        buttonLogin.onclick = function() {
+            modal.showModal();
+        }
+        buttonFechar.onclick = function() {
+            modal.close();
+        }
+        buttonFechar2.onclick = function() {
+            modal.close();
+        }
+    </script>
+</body>
+</html>

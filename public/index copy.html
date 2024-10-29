@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +7,6 @@
     <title>Troca-Tudo</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <main>
         <div class="container">
@@ -28,20 +26,6 @@
                     </div>
                     <button id="login" type="submit">Entrar</button>
                 </div>
-                <dialog>
-                    <div class="text">
-                        <h2>Login</h2>
-                        <button type="submit" class="fechar">&times</button>
-                    </div>
-                    <div class="acoes-login">
-                        <span>E-mail:</span>
-                        <input type="email" id="email" placeholder="Digite seu e-mail">
-                        <span>Senha:</span>
-                        <input type="password" id="password" placeholder="Digite sua senha">
-                        <button type="submit" id="entrar">Entrar</button>
-                        <button type="submit" id="fechar">Cancelar</button>
-                    </div>
-                </dialog>
             </div>
             <div class="produtos">
                 <div class="produto">
@@ -104,9 +88,23 @@
             </div>
         </div>
     </main>
+    <dialog>
+        <div class="text">
+            <h2>Login</h2>
+            <button type="submit" class="fechar">&times</button>
+        </div>
+        <div class="acoes-login">
+            <span>E-mail:</span>
+            <input type="email" id="email" placeholder="Digite seu e-mail">
+            <span>Senha:</span>
+            <input type="password" id="password" placeholder="Digite sua senha">
+            <button type="submit" id="login">Entrar</button>
+            <button type="submit" id="fechar">Cancelar</button>
+        </div>
+    </dialog>
     <footer>
         <div>
-            <h3 id="nome-empresa">Troca-Tudo</h3>
+            <h3 id ="nome-empresa">Troca-Tudo</h3>
         </div>
         <div class="social">
             <img src="icons/facebook.svg" alt="Facebook">
@@ -121,5 +119,4 @@
     </footer>
     <script src="script.js"></script>
 </body>
-
 </html>

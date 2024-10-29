@@ -50,26 +50,40 @@ dialog {
     border: none;
     border-radius: 0.5rem;
     box-shadow: 0 0 1em rgb(0, 0, 0 / 0.3);
-    width: 50%;
-    padding: 1.5rem;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-right: auto;
+    width: 20rem;
+    padding: 1rem;
+    margin: auto;
+}
+#login, #fechar, #entrar {
+    padding: 0.25rem;
+    margin: 0.8rem 0 0rem 0;
 }
 .text {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    position: relative;
+    text-align: center;
+}
+.text h2 {
+    display: inline-block;
+    margin: 0.5rem;
+}
+.text button {
+    position: absolute;
+    padding: 0.2rem 0.3rem;
+    right: 0;
+    top: 0;
 }
 .acoes-login {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
     margin: 1.5rem 0.5rem;
 }
-dialog h2 {
-    margin: 0.5rem;
+.acoes-login span, .acoes-login input {
+    margin: 0 0 .5rem 0;
+}
+.acoes-login input {
+    padding: 0.25rem;
+    width: 80%;
 }
 .produto {
     margin-bottom: 1rem;
@@ -112,13 +126,14 @@ dialog h2 {
     align-items: center;
 }
 .todas-acoes img{
-    width: 3em;
+    width: 2rem;
 }
 .todas-acoes h4{
     margin: 0 0.5rem;
 }
 footer {
     height: 6rem;
+    margin: 0.5rem;
 }
 .social img {
     width: 2rem;
