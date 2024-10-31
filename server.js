@@ -18,6 +18,8 @@ const connection = mysql.createConnection({
 connection.connect((err) => {
     if (err) throw err;
     console.log(`Conectado ao banco de dados MySQL ${connection.config.database}`);
+    const localhost = `http://localhost:${PORT}`
+    console.log(`Acesse: ${localhost}`)
 });
 
 const PORT = 3001;

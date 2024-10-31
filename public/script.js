@@ -11,3 +11,8 @@ buttonFechar.onclick = function() {
 buttonFechar2.onclick = function() {
     modal.close();
 }
+modal.addEventListener('click', (event) => {
+    if (event.target === modal) {
+        modal.close();
+    }
+});
