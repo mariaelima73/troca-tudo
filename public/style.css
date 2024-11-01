@@ -31,6 +31,12 @@ body {
 .itens-perfil img {
     height: 5rem;
 }
+#login {
+    display: block;
+}
+#logout {
+    display: none;
+}
 #contador {
     display: flex;
 }
@@ -54,7 +60,7 @@ dialog {
     padding: 1rem;
     margin: auto;
 }
-#login, #fechar, #entrar {
+#login, #logout, #fechar, #entrar {
     padding: 0.25rem;
     margin: 0.8rem 0 0rem 0;
 }
@@ -91,15 +97,15 @@ dialog {
     margin: 0.5rem;
     border-radius: 3px;
 }
-.produtos {
+#produtos {
     justify-content: center;
     align-items: center;
     grid-area: 1 / 2 / 2 / 4;
 }
-.produtos h3 {
+#produtos h3 {
     text-align: center;
 }
-.produtos h3, .produtos .acoes {
+#produtos h3, #produtos .acoes {
     padding: 0.8rem;
 }
 .produto-img {
@@ -112,7 +118,7 @@ dialog {
     border-radius: 3px;
     margin: 0.5rem;
 }
-.produtos img {
+#produtos img {
     width: 50%;
 }
 .acoes, footer {

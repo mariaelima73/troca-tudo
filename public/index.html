@@ -14,7 +14,7 @@
         <div class="container">
             <div id="perfil">
                 <div class="itens-perfil">
-                    <img src="avatars/account_circle.png" alt="Perfil de usuário não logado">
+                    <img src="avatars/account_circle.png" id="user-avatar" alt="Perfil do usuário">
                     <h2 id="nome-usuario">Usuário não logado</h2>
                     <div id="contador">
                         <div>
@@ -27,6 +27,7 @@
                         </div>
                     </div>
                     <button id="login" type="submit">Entrar</button>
+                    <button id="logout" type="submit" onclick="fazerLogout()">Sair</button>
                 </div>
                 <dialog>
                     <div class="text">
@@ -38,13 +39,13 @@
                         <input type="email" id="email" placeholder="Digite seu e-mail">
                         <span>Senha:</span>
                         <input type="password" id="password" placeholder="Digite sua senha">
-                        <button type="submit" id="entrar">Entrar</button>
+                        <button type="submit" id="entrar" onclick="fazerLogin()">Entrar</button>
                         <button type="submit" id="fechar">Cancelar</button>
                     </div>
                 </dialog>
             </div>
-            <div class="produtos">
-                <div class="produto">
+            <div id="produtos">
+                <!-- <div class="produto">
                     <h3 class="titulo-produto">Produto 1</h3>
                     <div class="produto-img">
                         <img src="images/produto1.jpg" alt="Produto 1">
@@ -100,7 +101,7 @@
                             <h4 id="ultimo-comentario">Último comentário</h4>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </main>
